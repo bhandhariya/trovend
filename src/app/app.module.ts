@@ -11,6 +11,7 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFireStorageModule } from "@angular/fire/storage";
 import { environment } from 'src/environments/environment';
+import { AppRoutingModule } from './routing';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { environment } from 'src/environments/environment';
     AppComponent,
     SigninComponent
   ],
-  imports: [
+  imports: [AppRoutingModule,
     BrowserModule,    ReactiveFormsModule,
     FormsModule,HttpClientModule,NgxPaginationModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),

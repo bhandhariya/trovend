@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { FormBuilder, FormGroup, FormArray, FormControl } from '@angular/forms';
+import { AuthService } from "../auth.service";
+
 
 @Component({
   selector: 'app-signin',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService){}
 
   ngOnInit() {
   }
+  
+  googleLogin(){
+    alert('raja')
+    this.authService.GoogleAuth();
+  }
+  facebookLogin(){
+    alert('facebook')
+    this.authService.FacebookAuth();
+  }
+
 
 }
