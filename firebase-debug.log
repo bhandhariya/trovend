@@ -1,0 +1,21 @@
+[debug] [2020-04-02T19:32:00.081Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T19:32:00.083Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\raj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-04-02T19:32:00.084Z] CLI Version:   8.0.0
+[debug] [2020-04-02T19:32:00.084Z] Platform:      win32
+[debug] [2020-04-02T19:32:00.084Z] Node Version:  v10.15.3
+[debug] [2020-04-02T19:32:00.085Z] Time:          Thu Apr 02 2020 12:32:00 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-04-02T19:32:00.085Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T19:32:00.085Z] 
+[debug] [2020-04-02T19:32:00.092Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-02T19:32:00.092Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\raj\Desktop\venturepact\newsapp
+
