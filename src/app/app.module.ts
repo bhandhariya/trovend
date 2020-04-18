@@ -12,12 +12,14 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFireStorageModule } from "@angular/fire/storage";
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './routing';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent
+    SigninComponent,
+    DashboardComponent
   ],
   imports: [AppRoutingModule,
     BrowserModule,    ReactiveFormsModule,
