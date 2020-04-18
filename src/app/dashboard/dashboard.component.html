@@ -1,1 +1,27 @@
-<p>dashboard works!</p>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" id="navId">
+    <li class="nav-item" *ngIf="displayName" >
+        <a  class="nav-link active">{{displayName}}</a>
+    </li>
+    <li class="nav-item">
+        <a (click)="logout()" class="nav-link">LogOut</a>
+    </li>
+    <li class="nav-item">
+        <div class="form-group">
+         
+            <form class="example-form">
+                <input type="file" (change)="onFileSelected($event)">
+                <div class="button-row">
+                  <button class="btn btn-primary" (click)="save()">Upload</button>
+              </div>
+              </form>
+        </div>
+    </li>
+</ul>
+
+<div *ngIf="imageArr"  >
+    <div *ngFor="let i of imageArr; let i=index" >
+        <img src="{{i}}" alt="">
+    </div>
+</div>
+

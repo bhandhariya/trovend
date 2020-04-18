@@ -17,14 +17,15 @@ export class AuthService {
   GoogleLogin(provider) {
     return this.afAuth.signInWithPopup(provider)
     .then((result) => {
+      console.log(result.user.displayName);
      this.setresult(result)
     }).catch((error) => {
         console.log(error)
     })
   }
 setresult(result){
-  console.log(result)
-
+  
+  localStorage.setItem('name',result.user.displayName)
   result.user.getIdToken().then(token=>{
     this.setToken(token)
   })
@@ -60,6 +61,10 @@ setresult(result){
       this.router.navigateByUrl('sign');
 
     }
+  }
+  logout(){
+    localStorage.removeItem('token');
+    this.isLoggedIn();
   }
   
 

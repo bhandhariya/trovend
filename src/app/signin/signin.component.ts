@@ -17,11 +17,9 @@ export class SigninComponent implements OnInit {
   }
   
   googleLogin(){
-    alert('raja')
     this.authService.GoogleAuth();
   }
   facebookLogin(){
-    alert('facebook')
     this.authService.FacebookAuth();
   }
 
