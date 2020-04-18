@@ -39,11 +39,7 @@ setresult(result){
   FacebookLogin(provider) {
     return this.afAuth.signInWithPopup(provider)
     .then((result) => {
-      if(result){
-
-      }
-
-        console.log('You have been successfully logged in!')
+     this.setresult(result)
     }).catch((error) => {
         console.log(error)
     })
