@@ -13,6 +13,7 @@ import { AngularFireStorageModule } from "@angular/fire/storage";
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './routing';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {NgxImageCompressService} from 'ngx-image-compress';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,AngularFireStorageModule
   ],
-  providers: [],
+  providers: [NgxImageCompressService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

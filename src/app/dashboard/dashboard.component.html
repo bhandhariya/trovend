@@ -12,6 +12,7 @@
             <form class="example-form">
                 <input type="file" (change)="onFileSelected($event)">
                 <div class="button-row">
+                    <button class="btn btn-primary" (click)="compressFile()">compress</button>  
                   <button class="btn btn-primary" (click)="save()">Upload</button>
               </div>
               </form>
